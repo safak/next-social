@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link";
-import { useState } from "react"
+import { useState } from "react";
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);

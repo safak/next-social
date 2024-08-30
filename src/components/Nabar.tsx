@@ -1,6 +1,6 @@
-import Link from "next/link"
-import MobileMenu from "./MobileMenu"
-import Image from "next/image"
+import Link from "next/link";
+import MobileMenu from "./MobileMenu";
+import Image from "next/image";
 import { ClerkLoaded, SignedIn, SignedOut, SignIn, UserButton } from "@clerk/nextjs";
 
 const Navbar = () => {
