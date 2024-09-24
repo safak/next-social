@@ -11,7 +11,7 @@ const Birthdays = () => {
       {/* User */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <Image src="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=800" 
+          <Image src="/monoGamesLogo.png" 
             alt="" 
             width={40} 
             height={40} 

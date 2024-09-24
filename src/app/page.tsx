@@ -9,7 +9,7 @@ const Homepage = () => {
   return (
     <div className="flex gap-6 pt-6">
       <div className="hidden md:block w-[20%]">
-        <LeftMenu/>
+        <LeftMenu type="home" />
       </div>
       <div className="w-full lg:w-[70%] xl:w-[50%]">
         <div className="flex flex-col gap-6">

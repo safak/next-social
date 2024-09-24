@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className='h-24 flex items-center justify-between'>
       <div className='md:hidden lg:block w-[20%]'>
         <Link href="/" className="font-bold text-xl text-blue-600">
-        mono-sol
+        monosol
         </Link>
       </div>
       <div className='hidden md:flex lg-block w-[50%] text-sm items-center justify-between'>

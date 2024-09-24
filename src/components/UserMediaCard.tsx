@@ -15,7 +15,7 @@ const UserMediaCard = ({userId}:{userId:string}) => {
     <div className="flex gap-4 justify-between flex-wrap">
       <div className="relative w-1/5 h-24">
         <Image 
-          src="https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?auto=compress&cs=tinysrgb&w=800" 
+          src="/monoGamesLogo.png" 
           alt="" 
           fill 
           className="object-cover rounded-md"
@@ -23,7 +23,7 @@ const UserMediaCard = ({userId}:{userId:string}) => {
       </div>
       <div className="relative w-1/5 h-24">
         <Image 
-          src="https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?auto=compress&cs=tinysrgb&w=800" 
+          src="/monoGamesLogo.png" 
           alt="" 
           fill 
           className="object-cover rounded-md"
@@ -31,7 +31,7 @@ const UserMediaCard = ({userId}:{userId:string}) => {
       </div>
       <div className="relative w-1/5 h-24">
         <Image 
-          src="https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?auto=compress&cs=tinysrgb&w=800" 
+          src="/monoGamesLogo.png" 
           alt="" 
           fill 
           className="object-cover rounded-md"
@@ -39,7 +39,7 @@ const UserMediaCard = ({userId}:{userId:string}) => {
       </div>
       <div className="relative w-1/5 h-24">
         <Image 
-          src="https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?auto=compress&cs=tinysrgb&w=800" 
+          src="/monoGamesLogo.png" 
           alt="" 
           fill 
           className="object-cover rounded-md"
@@ -47,7 +47,7 @@ const UserMediaCard = ({userId}:{userId:string}) => {
       </div>
       <div className="relative w-1/5 h-24">
         <Image 
-          src="https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?auto=compress&cs=tinysrgb&w=800" 
+          src="/monoGamesLogo.png" 
           alt="" 
           fill 
           className="object-cover rounded-md"
@@ -55,7 +55,7 @@ const UserMediaCard = ({userId}:{userId:string}) => {
       </div>
       <div className="relative w-1/5 h-24">
         <Image 
-          src="https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?auto=compress&cs=tinysrgb&w=800" 
+          src="/monoGamesLogo.png" 
           alt="" 
           fill 
           className="object-cover rounded-md"

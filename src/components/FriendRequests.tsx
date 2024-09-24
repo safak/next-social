@@ -14,7 +14,7 @@ const FriendRequests = () => {
       {/* User */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <Image src="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=800" 
+          <Image src="/monoGamesLogo.png" 
             alt="" 
             width={40} 
             height={40} 
@@ -42,7 +42,7 @@ const FriendRequests = () => {
       {/* User */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <Image src="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" width={40} height={40} className="w-10 h-10 rounded-full object-cover"/>
+          <Image src="/monoGamesLogo.png" alt="" width={40} height={40} className="w-10 h-10 rounded-full object-cover"/>
           <span className="font-semibold">Steven Mcleod</span>
         </div>
         <div className="flex gap-3 justify-end">
@@ -53,7 +53,7 @@ const FriendRequests = () => {
             {/* User */}
             <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <Image src="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" width={40} height={40} className="w-10 h-10 rounded-full object-cover"/>
+          <Image src="/monoGamesLogo.png" alt="" width={40} height={40} className="w-10 h-10 rounded-full object-cover"/>
           <span className="font-semibold">Steven Mcleod</span>
         </div>
         <div className="flex gap-3 justify-end">

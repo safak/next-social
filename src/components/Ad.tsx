@@ -14,7 +14,7 @@ const Ad = ({size}: {size:"sm" | "md" | "lg"}) => {
           size === "sm" ? "h-24" : size === "md" ? "h-36" : "h-46"
           }`}>
         <Image 
-          src="https://images.pexels.com/photos/2818118/pexels-photo-2818118.jpeg?auto=compress&cs=tinysrgb&w=800" 
+          src="/monoGamesLogo.png" 
           alt="" 
           fill 
           className="rounded-lg object-cover" 
@@ -22,7 +22,7 @@ const Ad = ({size}: {size:"sm" | "md" | "lg"}) => {
         </div>
         <div className="flex items-center gap-4">
         <Image 
-          src="https://images.pexels.com/photos/2818118/pexels-photo-2818118.jpeg?auto=compress&cs=tinysrgb&w=800" 
+          src="/monoGamesLogo.png" 
           alt="" 
           width={24}
           height={24} 

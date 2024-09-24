@@ -34,7 +34,7 @@ const UserInfoCard = ({userId}:{userId:string}) => {
       <div className="flex items-center justify-between">
         <div className="flex gap-1 items-center">
         <Image src="/link.png" alt="" width={16} height={16} />
-        <Link href="https://twitter.com/notifications" className="text-blue-500 font-medium">
+        <Link href="/" className="text-blue-500 font-medium">
           nftcryptomix
         </Link>
         </div>

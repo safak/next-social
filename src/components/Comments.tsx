@@ -6,7 +6,7 @@ const Comments = () => {
       {/* Write */}
       <div className="flex items-center gap-4">
         <Image 
-          src="https://images.pexels.com/photos/1092671/pexels-photo-1092671.jpeg?auto=compress&cs=tinysrgb&w=800" 
+          src="/monoGamesLogo.png" 
           alt="" 
           width={32} 
           height={32} 
@@ -30,7 +30,7 @@ const Comments = () => {
         <div className="flex gap-4 justify-between mt-6">
           {/* Avatar */}
           <Image 
-          src="https://images.pexels.com/photos/1092671/pexels-photo-1092671.jpeg?auto=compress&cs=tinysrgb&w=800" 
+          src="/monoGamesLogo.png" 
           alt="" 
           width={40} 
           height={40} 

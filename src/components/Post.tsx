@@ -8,7 +8,7 @@ const Post = () => {
       <div className="flex items-center justify-between">
       <div className="flex items-center gap-4">
         <Image 
-          src="https://images.pexels.com/photos/20041859/pexels-photo-20041859.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=378&fit=crop&h=612" 
+          src="/monoGamesLogo.png" 
           width={40} 
           height={40} 
           alt="" 
@@ -26,7 +26,7 @@ const Post = () => {
       <div className="flex flex-col gap-4">
         <div className="w-full min-h-96 relative">
         <Image 
-          src="https://images.pexels.com/photos/1655329/pexels-photo-1655329.jpeg?auto=compress&cs=tinysrgb&w=800" 
+          src="/monoGamesLogo.png" 
           fill 
           className="object-cover rounded-md"
           alt="" 

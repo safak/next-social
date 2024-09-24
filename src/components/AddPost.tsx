@@ -4,7 +4,7 @@ const AddPost = () => {
   return (
     <div className="p-4 bg-white shadow-md rounded-lg flex gap-4 justify-between text-sm">
       {/* Avatar */}
-      <Image src="https://images.pexels.com/photos/28219391/pexels-photo-28219391/free-photo-of-the-dolomites-in-italy.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" width={48} height={48} className="w-12 h-12 object-cover rounded-full" />
+      <Image src="/monoGamesLogo.png" alt="" width={48} height={48} className="w-12 h-12 object-cover rounded-full" />
       {/* Post */}
       <div className="flex-1">
         {/* Text Input */}
