@@ -1,0 +1,75 @@
+{
+	"fcc": {
+	   "prefix": "fcc",
+	   "body": [
+	 "import './${TM_FILENAME_BASE/^(.)/${1:/downcase}/}.css'",
+	 "",
+	 "const ${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}} = () => {",
+	 "  return (",
+	 "    <div className='${TM_FILENAME_BASE/^(.)/${1:/downcase}/}'>${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}</div>",
+	 "  )",
+	 "}",
+	 "",
+	 "export default ${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}" 
+	   ],
+	   "description": "Create an arrow component with css"
+   },
+   "fcs": {
+	   "prefix": "fcs",
+	   "body": [
+		   "import './${TM_FILENAME_BASE/^(.)/${1:/downcase}/}.scss'",
+		   "",
+		   "function ${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}(){",
+		   "  return (",
+		   "    <div className='${TM_FILENAME_BASE/^(.)/${1:/downcase}/}'>${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}</div>",
+		   "  )",
+		   "}",
+		   "",
+		   "export default ${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}"
+	   ],
+	   "description": "Create a functional component with Sass"
+   },
+   "acs": {
+   "prefix": "acs",
+   "body": [
+		   "import './${TM_FILENAME_BASE/^(.)/${1:/downcase}/}.scss'",
+		   "",
+		   "const ${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}} = () => {",
+		   "  return (",
+		   "    <div className='${TM_FILENAME_BASE/^(.)/${1:/downcase}/}'>${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}</div>",
+		   "  )",
+		   "}",
+		   "",
+		   "export default ${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}" 
+   ],
+   "description": "Create an arrow component with Sass"
+   },
+"comp": {
+	   "prefix": "comp",
+	   "body": [
+	 "const ${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}} = () => {",
+	 "  return (",
+	 "    <div>${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}</div>",
+	 "  )",
+	 "}",
+	 "",
+	 "export default ${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}" 
+	   ],
+	   "description": "Create a component"
+   },
+"compt": {
+	   "prefix": "compt",
+	   "body": [
+	 "const ${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}} = () => {",
+	 "  return (",
+	 "    <div className=''>${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}</div>",
+	 "  )",
+	 "}",
+	 "",
+	 "export default ${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}" 
+	   ],
+	   "description": "Create a component with tailwind classname"
+   }
+
+
+}
