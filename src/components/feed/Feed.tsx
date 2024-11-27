@@ -5,7 +5,7 @@ import prisma from "@/lib/client";
 const Feed = async ({ username }: { username?: string }) => {
   const { userId } = auth();
 
-  let posts:any[] =[];
+  let posts: any[] = [];
 
   if (username) {
     posts = await prisma.post.findMany({
@@ -44,7 +44,7 @@ const Feed = async ({ username }: { username?: string }) => {
     });
 
     const followingIds = following.map((f) => f.followingId);
-    const ids = [userId,...followingIds]
+    const ids = [userId, ...followingIds];
 
     posts = await prisma.post.findMany({
       where: {
@@ -71,10 +71,15 @@ const Feed = async ({ username }: { username?: string }) => {
     });
   }
   return (
-    <div className="p-4 bg-white shadow-md rounded-lg flex flex-col gap-12">
-      {posts.length ? (posts.map(post=>(
-        <Post key={post.id} post={post}/>
-      ))) : "No posts found!"}
+    <div className='p-4 bg-white shadow-md rounded-lg flex flex-col gap-12'>
+      {posts.length
+        ? posts.map((post) => (
+            <Post
+              key={post.id}
+              post={post}
+            />
+          ))
+        : "No publicaste nada aún"}
     </div>
   );
 };
