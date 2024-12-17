@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/mrcreel/next-social/compare/v0.1.1...v0.1.2) (2024-12-17)
+
+
+### Features
+
+* cleanup dependencies and reinstall ([76caef9](https://github.com/mrcreel/next-social/commit/76caef989055ea657a4c549e7e7a8a70a065308f))
+
 ### [0.1.1](https://github.com/mrcreel/next-social/compare/v0.1.0...v0.1.1) (2024-12-17)
 
 
