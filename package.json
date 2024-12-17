@@ -2,6 +2,10 @@
   "name": "soci-start",
   "version": "0.1.1",
   "private": true,
+  "engines": {
+    "node": ">=21.0.0",
+    "pnpm": ">=9.0.0"
+  },
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
@@ -41,7 +45,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "cz-conventional-changelog"
     }
   },
   "husky": {
