@@ -5,10 +5,11 @@ import Diversity3OutlinedIcon from "@mui/icons-material/Diversity3Outlined";
 import AddCircleOutlineRoundedIcon from "@mui/icons-material/AddCircleOutlineRounded";
 import Link from "next/link";
 import { Input } from "@/components/UI/input";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 
 const DesktopNavBar = () => {
   return (
-    <div className="grid grid-cols-5 py-3">
+    <div className="hidden md:grid grid-cols-5 py-3">
       <div className="col-span-1">
         <Link href="/">
           <p className="text-3xl font-bold text-[#F7F7F7]">Rant</p>
@@ -35,7 +36,12 @@ const DesktopNavBar = () => {
         </div>
         <Input />
       </div>
-      <div className="col-span-1">Right</div>
+      <div className="col-span-1 flex justify-end">
+        <Link href="/profile" className="flex items-center space-x-2">
+          <AccountCircleOutlinedIcon className="text-[#F7F7F7] text-2xl" />
+          <p className="text-[#F7F7F7]">Login/Register</p>
+        </Link>
+      </div>
     </div>
   );
 };
