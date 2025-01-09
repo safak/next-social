@@ -1,6 +1,10 @@
+import LandingPage from "@/components/LandingPage/page";
+
 const Homepage = () => {
   return (
-    <div className=''>Homepage</div>
+    <div className=''>
+      <LandingPage/>
+    </div>
   )
 }
 

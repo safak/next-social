@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/NavigationBar/Navbar";
-
+import AOSinit from "@/components/AOS";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -18,10 +18,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="bg-[#2E4053] px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
+        {/* <div className="bg-[#2E4053] px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
           <Navbar />
-        </div>
-        <div className="bg-[#F7F7F7] px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
+        </div> */}
+        {/* <div className="bg-[#F7F7F7] px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
+          {children}
+        </div> */}
+
+        <div className="bg-[#F7F7F7] h-screen px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
+          <AOSinit />
           {children}
         </div>
       </body>
