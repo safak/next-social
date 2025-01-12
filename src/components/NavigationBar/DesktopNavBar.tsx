@@ -8,7 +8,8 @@ import { Input } from "@/components/UI/input";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
-import { SignedIn } from "@clerk/nextjs";
+import { SignedIn, UserButton } from "@clerk/nextjs";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 const DesktopNavBar = () => {
   const notification = true;
   return (
@@ -37,13 +38,17 @@ const DesktopNavBar = () => {
             <p className="text-[#F7F7F7]">Stories</p>
           </Link>
         </div>
-        <Input />
+        <div className="relative">
+          <div>
+            <Input className="pl-8" placeholder="search..." />
+          </div>
+          <div className="text-white absolute top-1 left-2">
+            <SearchOutlinedIcon />
+          </div>
+        </div>
       </div>
       <div className="col-span-1 flex justify-end gap-4 items-center">
         <SignedIn>
-          <Link href="/profile">
-            <AccountCircleOutlinedIcon className="text-[#F7F7F7] text-2xl" />
-          </Link>
           <Link href="/profile">
             <MessageOutlinedIcon className="text-[#F7F7F7] text-2xl" />
           </Link>
@@ -53,6 +58,7 @@ const DesktopNavBar = () => {
               <div className="w-2 h-2 bg-red-500 rounded-full absolute top-6"></div>
             )}
           </Link>
+          <UserButton />
         </SignedIn>
       </div>
     </div>
