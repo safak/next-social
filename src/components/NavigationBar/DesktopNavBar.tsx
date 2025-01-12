@@ -8,6 +8,7 @@ import { Input } from "@/components/UI/input";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
+import { SignedIn } from "@clerk/nextjs";
 const DesktopNavBar = () => {
   const notification = true;
   return (
@@ -39,16 +40,20 @@ const DesktopNavBar = () => {
         <Input />
       </div>
       <div className="col-span-1 flex justify-end gap-4 items-center">
-        <Link href="/profile">
-          <AccountCircleOutlinedIcon className="text-[#F7F7F7] text-2xl" />
-        </Link>
-        <Link href="/profile">
-          <MessageOutlinedIcon className="text-[#F7F7F7] text-2xl" />
-        </Link>
-        <Link href="/profile">
-          <NotificationsNoneOutlinedIcon className="text-[#F7F7F7] text-2xl relative" />
-          {notification && <div className="w-2 h-2 bg-red-500 rounded-full absolute top-6"></div>}
-        </Link>
+        <SignedIn>
+          <Link href="/profile">
+            <AccountCircleOutlinedIcon className="text-[#F7F7F7] text-2xl" />
+          </Link>
+          <Link href="/profile">
+            <MessageOutlinedIcon className="text-[#F7F7F7] text-2xl" />
+          </Link>
+          <Link href="/profile">
+            <NotificationsNoneOutlinedIcon className="text-[#F7F7F7] text-2xl relative" />
+            {notification && (
+              <div className="w-2 h-2 bg-red-500 rounded-full absolute top-6"></div>
+            )}
+          </Link>
+        </SignedIn>
       </div>
     </div>
   );

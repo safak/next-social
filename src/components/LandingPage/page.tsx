@@ -7,10 +7,20 @@ import BackgroundImage2 from "@/assets/img/pexels-a-darmel-7862447.jpg"; // Add 
 import BackgroundImage3 from "@/assets/img/pexels-cottonbro-5780773.jpg"; // Add another background image
 import Link from "next/link";
 import ArrowRightAltOutlinedIcon from "@mui/icons-material/ArrowRightAltOutlined";
+import { SignedIn, SignedOut, useAuth } from "@clerk/nextjs";
+import { useRouter } from "next/navigation";
 
 const LandingPage = () => {
+  const { isLoaded, userId } = useAuth();
+  const router = useRouter();
   const [currentBackground, setCurrentBackground] = useState(BackgroundImage1);
   const backgrounds = [BackgroundImage1, BackgroundImage2, BackgroundImage3];
+
+  useEffect(() => {
+    if (isLoaded && userId) {
+      router.push("/user/home");
+    }
+  }, [isLoaded, userId, router]);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -41,11 +51,20 @@ const LandingPage = () => {
               <span className="rotate-45">Rant</span>
             </span>
           </p>
-          <Link href="/">
-            <button className="bg-[#6c5ce7] text-center block mx-auto px-8 py-2 mt-10 text-white rounded-lg font-bold">
-              Get Started <ArrowRightAltOutlinedIcon />
-            </button>
-          </Link>
+          {/* <SignedIn>
+            <Link href="/user/home">
+              <button className="bg-[#6c5ce7] text-center block mx-auto px-8 py-2 mt-10 text-white rounded-lg font-bold">
+                Home <ArrowRightAltOutlinedIcon />
+              </button>
+            </Link>
+          </SignedIn> */}
+          <SignedOut>
+            <Link href="/sign-up">
+              <button className="bg-[#6c5ce7] text-center block mx-auto px-8 py-2 mt-10 text-white rounded-lg font-bold">
+                Get Started <ArrowRightAltOutlinedIcon />
+              </button>
+            </Link>
+          </SignedOut>
         </div>
       </div>
     </div>
