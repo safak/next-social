@@ -25,7 +25,7 @@ export default function RootLayout({
           {children}
         </div> */}
 
-        <div className="bg-[#F7F7F7] h-screen px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
+        <div className="bg-[#F7F7F7]">
           <AOSinit />
           {children}
         </div>

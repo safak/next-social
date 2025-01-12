@@ -6,10 +6,12 @@ import AddCircleOutlineRoundedIcon from "@mui/icons-material/AddCircleOutlineRou
 import Link from "next/link";
 import { Input } from "@/components/UI/input";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
-
+import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
+import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 const DesktopNavBar = () => {
+  const notification = true;
   return (
-    <div className="hidden md:grid grid-cols-5 py-3">
+    <div className="hidden md:grid grid-cols-5 py-5">
       <div className="col-span-1">
         <Link href="/">
           <p className="text-3xl font-bold text-[#F7F7F7]">Rant</p>
@@ -36,10 +38,16 @@ const DesktopNavBar = () => {
         </div>
         <Input />
       </div>
-      <div className="col-span-1 flex justify-end">
-        <Link href="/profile" className="flex items-center space-x-2">
+      <div className="col-span-1 flex justify-end gap-4 items-center">
+        <Link href="/profile">
           <AccountCircleOutlinedIcon className="text-[#F7F7F7] text-2xl" />
-          <p className="text-[#F7F7F7]">Login/Register</p>
+        </Link>
+        <Link href="/profile">
+          <MessageOutlinedIcon className="text-[#F7F7F7] text-2xl" />
+        </Link>
+        <Link href="/profile">
+          <NotificationsNoneOutlinedIcon className="text-[#F7F7F7] text-2xl relative" />
+          {notification && <div className="w-2 h-2 bg-red-500 rounded-full absolute top-6"></div>}
         </Link>
       </div>
     </div>
